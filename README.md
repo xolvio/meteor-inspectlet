@@ -1,12 +1,12 @@
 Meteor Inspectlet
 =================
 
-## About
+## Features
 
 Inspectlet lets you playback everything visitors do on your site so you can learn about how your
 app is being used.
 
-## Inspectlet Features
+[Find out more / Sign up for a free account](http://www.inspectlet.com/?u=xolvio)
 
 ### Click Heatmaps
 ![](https://raw.githubusercontent.com/xolvio/meteor-inspectlet/master/images/click-heatmap.png)
@@ -17,9 +17,7 @@ app is being used.
 ### Scroll Heatmaps
 ![](https://raw.githubusercontent.com/xolvio/meteor-inspectlet/master/images/scroll-heatmap.png)
 
-## Sign Up
-
-[Sign up for a free account](http://www.inspectlet.com/?u=xolvio)
+[Find out more / Sign up for a free account](http://www.inspectlet.com/?u=xolvio)
 
 ## Installation
 
