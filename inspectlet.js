@@ -41,6 +41,7 @@ InspectletInternals = {
         }
 
         // check if IronRouter is being used
+        var Router = window.Router;
         if (Router && Router.onAfterAction) {
           Router.onAfterAction(function () {
             Inspectlet.push(['virtualPage']);

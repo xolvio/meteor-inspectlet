@@ -1,6 +1,6 @@
 Package.describe({
   name: 'xolvio:inspectlet',
-  version: '1.0.0',
+  version: '1.0.1',
   summary: 'Inspectlet in an easy to use package.',
   git: 'https://github.com/xolvio/meteor-inspectlet',
   documentation: 'README.md'
