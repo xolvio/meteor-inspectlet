@@ -42,7 +42,7 @@ This package wires up inspectlet into the Meteor lifecycle as follows:
 * Inspectlet is initialized on startup
 * If IronRouter is detected, virtualPageViews are tagged
 * Logged in users are identified and their name + emails are sent
-* The platform is sent to distinguish between a web or cordoba Meteor build
+* The platform is sent to distinguish between a web or cordova Meteor build
 
 The package also exposes an `Inspectlet` object on the client. This is the same as the `__insp`
 object in the docs. You can use this to `push` and to do so in a chained fashion, for example you
