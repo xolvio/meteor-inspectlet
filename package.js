@@ -1,7 +1,7 @@
 Package.describe({
   name: 'xolvio:inspectlet',
   version: '1.0.1',
-  summary: 'Inspectlet in an easy to use package.',
+  summary: 'Make it easy to use Inspectlet, the web app user actions recording service',
   git: 'https://github.com/xolvio/meteor-inspectlet',
   documentation: 'README.md'
 });
