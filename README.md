@@ -1,6 +1,8 @@
 Meteor Inspectlet
 =================
 
+Wrapper around [Inspectlet](http://www.inspectlet.com/), a service that enables you to record the actions user take on your site and play them back later.
+
 ## Features
 
 Inspectlet lets you playback everything visitors do on your site so you can learn about how your
@@ -37,9 +39,9 @@ and set your site id in the Meteor settings like this:
 
 ## Usage
 
-This package wires up inspectlet into the Meteor lifecycle as follows:
+This package wires up Inspectlet into the Meteor lifecycle as follows:
 
-* Inspectlet is initialized on startup
+* Inspectlet is loaded from CDN on startup
 * If IronRouter is detected, virtualPageViews are tagged
 * Logged in users are identified and their name + emails are sent
 * The platform is sent to distinguish between a web or cordova Meteor build
@@ -55,4 +57,3 @@ Inspectlet
 ```
 
 See the [full Inspectlet documentation](https://www.inspectlet.com/docs).
-
