@@ -51,10 +51,12 @@ InspectletInternals = {
         Accounts.onLogin(function () {
           var user = Meteor.user();
 
-          Inspectlet
-            .push(['identify', user._id])
-            .push(['name', user.profile.name])
-            .push(['tagSession', {email: user.emails[0].address}]);
+          if (user) {
+            Inspectlet
+              .push(['identify', user._id])
+              .push(['name', user.profile.name])
+              .push(['tagSession', {email: self.getEmail(user)}]);
+          }
         });
 
       });
@@ -64,6 +66,18 @@ InspectletInternals = {
         '"Meteor.settings.public.inspectlet.id" is not set.'
       );
     }
+  },
+
+  getEmail: function (user) {
+    if (user) {
+      if (user.registered_emails) {
+        return user.registered_emails[0];
+      } else if (user.emails) {
+        return user.emails[0];
+      }
+    }
+
+    return null;
   },
 
   injectInspectlet: function () {
