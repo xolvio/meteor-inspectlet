@@ -73,7 +73,7 @@ InspectletInternals = {
       if (user.registered_emails) {
         return user.registered_emails[0];
       } else if (user.emails) {
-        return user.emails[0];
+        return user.emails[0].address;
       }
     }
 
